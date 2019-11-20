@@ -63,7 +63,7 @@ main {
   font-weight: 500;
   letter-spacing: 0.1em;
   font-variant: small-caps;
-  text-align: center;
+  text-align: left;
 }
 /* Dates */
 .date-grid {
@@ -76,11 +76,12 @@ main {
 .date-grid button {
   position: relative;
   border: 0;
-  width: 4.5ch;
-  height: 4.5ch;
+  width: 20.5ch;
+  height: 15.5ch;
   border-radius: 50%;
   background-color: transparent;
   color:  #486581;
+  text-align: left;
 }
 .date-grid button:hover, .date-grid button:focus {
   outline: none;
