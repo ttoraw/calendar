@@ -1,0 +1,2 @@
+use todosDaily
+db.todosDaily.insert({"order":0,"complete":false,"content":"eat apple on the table","color":"#FF0000","delete":false,"date":"2019-12-09"})

@@ -1,0 +1,206 @@
+.title {
+    color: #fcba03;
+    font-size: 52px;
+    text-align: center;
+}
+
+/* :root {
+  --teal-050: #effcf6;
+  --teal-100: #c6f7e2;
+  --teal-200: #8eedc7;
+  --teal-300: #65d6ad;
+  --teal-400: #3ebd93;
+  --teal-500: #27ab83;
+  --teal-600: #199473;
+  --teal-700: #147d64;
+  --teal-800: #0c6b58;
+  --teal-900: #014d40;
+  --blue-grey-050: #f0f4f8;
+  --blue-grey-100: #d9e2ec;
+  --blue-grey-200: #bcccdc;
+  --blue-grey-300: #9fb3c8;
+  --blue-grey-400: #829ab1;
+  --blue-grey-500: #627d98;
+  --blue-grey-600: #486581;
+  --blue-grey-700: #334e68;
+  --blue-grey-800: #243b53;
+  --blue-grey-900: ;
+} */
+html {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 125%;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #102a43;
+}
+body {
+  min-height: 100vh;
+  background: #d9e2ec;
+}
+main {
+  max-width: max-content;
+  margin: 3em auto 0 auto;
+  padding: 1.5em;
+  background-color: #fff;
+  border: 2px solid #bcccdc;
+  border-radius: 8px;
+}
+.month-indicator {
+  color:  #334e68;
+  text-align: center;
+  font-weight: 500;
+}
+.day-of-week, .date-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.day-of-week {
+  margin-top: 1.25em;
+}
+.day-of-week > * {
+  font-size: 0.7em;
+  color: #829ab1;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-variant: small-caps;
+  text-align: left;
+}
+/* Dates */
+.date-grid {
+  margin-top: 0.5em;
+}
+/* Positioning the first day */
+.date-grid button:first-child {
+  grid-column: 6;
+}
+.date-grid button {
+  position: relative;
+  border: 0;
+  width: 20.5ch;
+  height: 15.5ch;
+  border-radius: 50%;
+  background-color: transparent;
+  color:  #486581;
+  text-align: left;
+}
+.date-grid button:hover, .date-grid button:focus {
+  outline: none;
+  background-color: #f0f4f8;
+  color: #334e68;
+}
+.date-grid button:active, .date-grid button.is-selected {
+  background-color: #c6f7e2;
+  color: #014d40;
+}
+
+/*  dimmedLayer  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 100px;
+}
+
+.pop-layer .pop-container {
+  padding: 20px 25px;
+}
+
+.pop-layer p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.pop-layer {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 410px;
+  height: auto;
+  background-color: #fff;
+  border: 5px solid #3571B5;
+  z-index: 10;
+}
+
+.dim-layer {
+  /* display: none; */
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.dim-layer .dimBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer .pop-layer {
+  display: block;
+}
+
+a.btn-layerClose {
+  display: inline-block;
+  height: 25px;
+  padding: 0 14px 0;
+  border: 1px solid #304a8a;
+  background-color: #3f5a9d;
+  font-size: 13px;
+  color: #fff;
+  line-height: 25px;
+}
+
+/*dimmed layer container*/
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+ /* background-color: #333;*/
+}
+
+/* Style the topnav links */
+.topnav forn {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  background-color: #ddd;
+  padding: 10px;  
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
